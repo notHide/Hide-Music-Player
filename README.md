@@ -17,15 +17,15 @@ LOGO是从Google上搜索的，如果造成不必要的麻烦请告知。
 * 通知栏显示音乐信息与关闭播放器  
 
 
-# 使用方式  
+## 使用方式  
 因为使用的是eclipse工程，所以请手动导一下依赖工程。  
 唯一需要依赖的就是ZDepthShadow：<a href="https://github.com/w9xhc/ShadowLayout-for-eclipse" target="_blank">点击这里</a> 
 
-# Demo  
+## Demo  
 <a href="https://github.com/w9xhc/Hide-Music-Player/blob/master/apk/hide_player.apk" target="_blank">APK下载</a> 
 
 
-# 截图  
+## 截图  
 ![image](https://github.com/w9xhc/Hide-Music-Player/blob/master/Screenshots/1.jpg?raw=true)
 ![image](https://github.com/w9xhc/Hide-Music-Player/blob/master/Screenshots/2.jpg?raw=true)
 ![image](https://github.com/w9xhc/Hide-Music-Player/blob/master/Screenshots/3.jpg?raw=true)
