@@ -4,7 +4,7 @@
 LOGO是从Google上搜索的，如果造成不必要的麻烦请告知。
 
 
-# 1.0版主要特点
+## 1.0版主要特点
 * 摇一摇进入播放器
 * 下拉展开新视图（扫描音乐）
 * 音乐列表放大的动画
@@ -18,8 +18,8 @@ LOGO是从Google上搜索的，如果造成不必要的麻烦请告知。
 
 
 # 使用方式  
-因为使用的是eclipse工程，所以请手动导一下依赖工程。
-唯一需要依赖的就是ZDepthShadow，我的Git上面有此工程的eclipse版本：<a href="https://github.com/w9xhc/ShadowLayout-for-eclipse" target="_blank">点击这里</a> 
+因为使用的是eclipse工程，所以请手动导一下依赖工程。  
+唯一需要依赖的就是ZDepthShadow：<a href="https://github.com/w9xhc/ShadowLayout-for-eclipse" target="_blank">点击这里</a> 
 
 # demo  
 <a href="https://github.com/w9xhc/Hide-Music-Player/blob/master/apk/hide_player.apk" target="_blank">APK下载</a> 
