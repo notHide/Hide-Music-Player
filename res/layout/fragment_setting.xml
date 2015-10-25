@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/clouds">
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="35dp"
+              android:drawableRight="@drawable/right_arrow"
+              android:padding="15dp"
+              android:textSize="16sp"
+              android:textColor="@color/black_normal_white_pressed"
+              android:text="更换主题"
+              android:id="@+id/setting_theme"
+            />
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_bg_bottom_divider"
+                    android:id="@+id/setting_show_list_anim"
+            >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:padding="15dp"
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/black_normal_white_pressed"
+                  android:text="列表动画"
+                />
+        <com.zxsc.zxmusic.widget.SwitchButton
+                android:id="@+id/toggle_list_anim"
+                android:layout_height="30dp"
+                android:layout_width="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                />
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="0dp"
+          android:layout_weight="1"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:orientation="vertical"
+            >
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textColor="#cccccc"
+                  android:text="@string/author"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textColor="#cccccc"
+                  android:text="@string/weibo"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textColor="#cccccc"
+                  android:text="@string/github"
+                  android:layout_marginBottom="15dp"
+                />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="130dp"
+             android:background="@color/midnight_blue"
+             android:id="@+id/root"
+        >
+    <RelativeLayout
+            android:id="@+id/content_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/album"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                />
+
+        <ImageButton
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/status_bg"
+                android:src="@drawable/statusbar_close"/>
+
+        <TextView
+                android:id="@+id/songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/album"
+                android:layout_toLeftOf="@+id/close"
+                android:ellipsize="end"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:maxLines="3"
+                android:textSize="16sp"/>
+        <TextView
+                android:id="@+id/artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignLeft="@+id/songName"
+                android:layout_below="@+id/songName"
+                android:ellipsize="end"
+                android:textColor="@color/clouds"
+                android:maxLines="3"
+                android:textSize="12sp"/>
+
+        <!--<View android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:id="@+id/center"/>-->
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/artist"
+                        android:layout_alignLeft="@+id/artist"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginLeft="10dp"
+                >
+            <ImageButton
+                    android:id="@+id/previous"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/status_bg"
+                    android:visibility="gone"
+                    android:src="@drawable/statusbar_btn_prev"/>
+
+            <ImageButton
+                    android:id="@+id/play"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/previous"
+                    android:layout_toRightOf="@+id/previous"
+                    android:background="@drawable/status_bg"
+                    android:visibility="gone"
+                    android:src="@drawable/statusbar_btn_play"/>
+
+            <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/previous"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/play"
+                    android:background="@drawable/status_bg"
+                    android:visibility="gone"
+
+                    android:src="@drawable/statusbar_btn_next"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

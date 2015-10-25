@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:scaleType="centerCrop"
+               android:id="@+id/iv_bg"
+            />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@drawable/shadow_vertical"
+            />
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:id="@+id/title_root">
+        <ImageView android:layout_width="50dp"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/back_arrow"
+                   android:layout_centerVertical="true"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="5dp"
+                   android:id="@+id/title_left"
+                   android:background="@drawable/dark_selector"
+                />
+        <TextView
+                android:id="@+id/tv_song_name"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/title_left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:shadowColor="#000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="4"
+                android:textColor="@color/clouds"
+                />
+        <TextView
+                android:id="@+id/tv_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_alignLeft="@+id/tv_song_name"
+                android:layout_below="@+id/tv_song_name"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="4"
+                android:textColor="@color/clouds"
+                />
+    </RelativeLayout>
+
+
+    <View android:layout_width="0dp" android:layout_height="0dp"
+          android:layout_centerInParent="true"
+          android:id="@+id/center"/>
+    <ImageView
+            android:id="@+id/iv_album"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:layout_above="@+id/center"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:background="@drawable/shadow_reverse"
+            >
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/controller_root"
+                        android:padding="15dp"
+                >
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:layout_marginBottom="15dp"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical"
+                          android:id="@+id/controller_play_root"
+                    >
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/tv_curtime"
+                          android:shadowColor="#000"
+                          android:shadowDx="3"
+                          android:shadowDy="3"
+                          android:shadowRadius="4"
+                          android:layout_marginRight="10dp"
+                          android:textColor="@color/clouds"
+                        />
+                <com.zxsc.zxmusic.widget.HintSeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/sb_progress"
+                        android:maxHeight="2dp"
+                        android:progressDrawable="@drawable/progress"
+                        android:thumb="@drawable/progress_thumb"
+                        />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/tv_totaltime"
+                          android:layout_marginLeft="10dp"
+                          android:shadowColor="#000"
+                          android:shadowDx="3"
+                          android:shadowDy="3"
+                          android:shadowRadius="4"
+                          android:textColor="@color/clouds"
+                        />
+            </LinearLayout>
+            <com.zxsc.zxmusic.widget.MultiStateView
+                    android:id="@+id/play_mode"
+                    android:layout_width="@dimen/play_btn_width"
+                    android:layout_height="@dimen/play_btn_width"
+                    android:background="@drawable/play_selector"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/controller_btn_root"
+                    />
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/controller_btn_root"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/controller_play_root"
+                    >
+
+
+                <ImageView android:layout_width="@dimen/play_btn_width" android:layout_height="@dimen/play_btn_width"
+                           android:id="@+id/play_previous"
+                           android:src="@drawable/play_previous"
+                           android:layout_marginLeft="5dp"
+                           android:background="@drawable/play_selector"/>
+                <com.zxsc.zxmusic.widget.MultiStateView
+                        android:id="@+id/play"
+                        android:layout_width="@dimen/play_btn_width" android:layout_height="@dimen/play_btn_width"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/play_previous"
+                        android:layout_alignTop="@+id/play_previous"
+                        android:background="@drawable/play_selector"/>
+                <ImageView
+                        android:layout_width="@dimen/play_btn_width"
+                        android:layout_height="@dimen/play_btn_width"
+                        android:id="@+id/play_next"
+                        android:src="@drawable/play_next"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/play"
+                        android:layout_alignTop="@+id/play"
+                        android:background="@drawable/play_selector"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="title">
+        <item name="android:id">@id/title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="z_depth">z_depth2</item>
+        <item name="z_depth_paddingLeft">z_depth0</item>
+        <item name="z_depth_paddingTop">z_depth0</item>
+        <item name="z_depth_paddingRight">z_depth0</item>
+        <item name="z_depth_paddingBottom">z_depth5</item>
+    </style>
+
+    <style name="fade_animation">
+        <item name="@android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="@android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+</resources>

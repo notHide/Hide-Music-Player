@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zxsc.zxmusic"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="16"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"
+                 android:theme="@style/AppTheme"
+                 android:name=".other.HideApplication"
+            >
+        <activity android:name=".SplashActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name=".MainActivity"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThemeColorChangeActivity"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden"
+                />
+        <activity android:name=".SongDetailActivity"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden"
+                />
+        <service android:name=".service.ScanService"/>
+        <service android:name=".service.PlayService"/>
+        <receiver android:name=".receiver.NotificationRecevier">
+            <intent-filter>
+                <action android:name="play"/>
+                <action android:name="play_update"/>
+                <action android:name="close"/>
+                <action android:name="previous"/>
+                <action android:name="next"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

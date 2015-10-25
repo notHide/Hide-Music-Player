@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zxsc.zxmusic.widget.PullRightLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <FrameLayout
+            android:id="@+id/behind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#f00"
+            >
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="centerInside"
+                   android:src="@drawable/trash"
+                />
+    </FrameLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/item_root"
+            android:padding="10dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:textSize="18sp"
+                  android:text="In Liverpool"
+                  android:singleLine="true"
+                  android:id="@+id/tv_name"
+                />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:layout_marginTop="5dp"
+                  android:text="123 - 123"
+                  android:singleLine="true"
+                  android:id="@+id/tv_artist"
+                />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:textSize="14sp"
+                  android:layout_marginTop="5dp"
+                  android:text="2分23秒"
+                  android:singleLine="true"
+                  android:id="@+id/tv_duration"
+                />
+
+    </LinearLayout>
+
+
+</com.zxsc.zxmusic.widget.PullRightLayout>

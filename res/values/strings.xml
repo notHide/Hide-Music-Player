@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hide音乐</string>
+    <string name="error_failed_request_focus">Error: 无法获得焦点</string>
+    <string name="author">作者：Hide</string>
+    <string name="weibo">微博：@Hideeeee</string>
+    <string name="github">Github：w9xhc</string>
+</resources>

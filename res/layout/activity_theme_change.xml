@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/title_height"
+            android:background="@color/clouds"
+            android:layout_above="@+id/select_panel_root"
+            >
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/skin_preview"
+                android:layout_gravity="center"
+                android:id="@+id/preview"
+                />
+
+    </FrameLayout>
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/select_panel_root"
+            >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/select_panel"
+                >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.zxsc.zxmusic.widget.TitleBar
+            style="@style/title"
+            />
+
+</RelativeLayout>
