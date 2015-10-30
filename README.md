@@ -24,6 +24,9 @@ LOGO是从Google上搜索的，如果造成不必要的麻烦请告知。
 ## Demo  
 <a href="https://github.com/w9xhc/Hide-Music-Player/blob/master/apk/hide_player.apk" target="_blank">APK下载</a> 
 
+## 1.1版预览  
+![image](http://ww3.sinaimg.cn/mw690/85d2e097gw1exiwkab036j20820dpt96.jpg)
+![image](http://ww2.sinaimg.cn/mw690/85d2e097gw1exiwk9m5ufj20820dr0t9.jpg)  
 
 ## 截图  
 ![image](https://github.com/w9xhc/Hide-Music-Player/blob/master/Screenshots/1.jpg?raw=true)
